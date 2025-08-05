@@ -20,19 +20,26 @@ Admins can view and manage submissions through a fully functional and customized
 
 ```
 Django_Project/
-├── home/
+├── Django_Project/           # Main project directory (contains settings, urls, wsgi)
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+├── home/                     # Django app directory
+│   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
 │   ├── models.py
 │   ├── views.py
-│   └── urls.py
-├── Django_Project/
-│   ├── settings.py
 │   ├── urls.py
-│   └── wsgi.py
-├── manage.py
-├── templates/
-└── static/
+│   └── migrations/
+│       └── __init__.py
+├── static/                   # Static files (CSS/JS/images)
+├── templates/                # HTML templates
+├── db.sqlite3                # SQLite database (auto-generated)
+├── manage.py                 # Django management script
+└── README.md
+
 ```
 
 ---
