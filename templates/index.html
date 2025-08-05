@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container mt-4">
+    <div id="carouselExample" class="carousel slide shadow rounded" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="{% static 'img1.jpg' %}" 
+                     class="d-block w-100 img-fluid rounded" style="height: 500px; object-fit: cover;" alt="Ice Cream 1">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img1.jpg' %}" 
+                     class="d-block w-100 img-fluid rounded" style="height: 500px; object-fit: cover;" alt="Ice Cream 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/1200x/cd/9e/f1/cd9ef18d1b2b30caaa21a50516be079a.jpg" 
+                     class="d-block w-100 img-fluid rounded" style="height: 500px; object-fit: cover;" alt="Ice Cream 3">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<div class="container my-3" >
+    <h1 class='my2 text-center'>Select from our range of Ice Creams</h1>
+<div class="container my-3">
+  <h1 class="my-4 text-center">Select from Our Range of Ice Creams</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://placehold.co/600x400/6B4F4F/FFFFFF?text=Belgian+Chocolate" class="card-img-top" alt="Belgian Chocolate Ice Cream">
+        <div class="card-body">
+          <h5 class="card-title">Belgian Chocolate</h5>
+          <p class="card-text">Rich, dark, and decadent. Made with authentic Belgian cocoa for a truly indulgent experience.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-sm btn-primary">Order Now</button>
+            <span class="text-body-secondary fw-bold">₹90</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://placehold.co/600x400/FFBF00/FFFFFF?text=Alphonso+Mango" class="card-img-top" alt="Alphonso Mango Ice Cream">
+        <div class="card-body">
+          <h5 class="card-title">Alphonso Mango</h5>
+          <p class="card-text">The king of fruits, now in a creamy scoop! Made with real Alphonso mango pulp from Ratnagiri.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-sm btn-primary">Order Now</button>
+            <span class="text-body-secondary fw-bold">₹85</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://placehold.co/600x400/98FB98/FFFFFF?text=Kesar+Pista" class="card-img-top" alt="Kesar Pista Ice Cream">
+        <div class="card-body">
+          <h5 class="card-title">Kesar Pista</h5>
+          <p class="card-text">A royal treat for your taste buds. Saffron-infused cream generously loaded with crunchy pistachios.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-sm btn-primary">Order Now</button>
+            <span class="text-body-secondary fw-bold">₹100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://placehold.co/600x400/FC5A8D/FFFFFF?text=Strawberry+Bliss" class="card-img-top" alt="Strawberry Bliss Ice Cream">
+        <div class="card-body">
+          <h5 class="card-title">Strawberry Bliss</h5>
+          <p class="card-text">Sweet, tangy, and refreshing. Made with fresh strawberries sourced from local farms.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-sm btn-primary">Order Now</button>
+            <span class="text-body-secondary fw-bold">₹80</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://placehold.co/600x400/6F4E37/FFFFFF?text=Coffee+Walnut" class="card-img-top" alt="Coffee Walnut Ice Cream">
+        <div class="card-body">
+          <h5 class="card-title">Coffee Walnut</h5>
+          <p class="card-text">The perfect pick-me-up! A robust coffee flavour combined with the crunchy texture of roasted walnuts.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-sm btn-primary">Order Now</button>
+            <span class="text-body-secondary fw-bold">₹95</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://placehold.co/600x400/F3E5AB/333333?text=Classic+Vanilla" class="card-img-top" alt="Classic Vanilla Ice Cream">
+        <div class="card-body">
+          <h5 class="card-title">Classic Vanilla</h5>
+          <p class="card-text">Simple, elegant, and timeless. Made with real vanilla bean extract for a smooth, aromatic flavour.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-sm btn-primary">Order Now</button>
+            <span class="text-body-secondary fw-bold">₹70</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://placehold.co/600x400/FFB6C1/FFFFFF?text=Gulkand+Delight" class="card-img-top" alt="Gulkand Delight Ice Cream">
+        <div class="card-body">
+          <h5 class="card-title">Gulkand Delight</h5>
+          <p class="card-text">An exotic Indian flavour. Sweet rose petal preserve (gulkand) swirled into our signature creamy base.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-sm btn-primary">Order Now</button>
+            <span class="text-body-secondary fw-bold">₹90</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://placehold.co/600x400/98FF98/333333?text=Mint+Choco+Chip" class="card-img-top" alt="Mint Choco Chip Ice Cream">
+        <div class="card-body">
+          <h5 class="card-title">Mint Choco Chip</h5>
+          <p class="card-text">A cool and refreshing mint base packed with delicious dark chocolate chips. A true classic!</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-sm btn-primary">Order Now</button>
+            <span class="text-body-secondary fw-bold">₹85</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img src="https://placehold.co/600x400/DEB887/FFFFFF?text=Roasted+Almond" class="card-img-top" alt="Roasted Almond Ice Cream">
+        <div class="card-body">
+          <h5 class="card-title">Roasted Almond</h5>
+          <p class="card-text">A crunchy, nutty delight. Creamy almond-flavoured ice cream filled with pieces of roasted almonds.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-sm btn-primary">Order Now</button>
+            <span class="text-body-secondary fw-bold">₹95</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock body %}

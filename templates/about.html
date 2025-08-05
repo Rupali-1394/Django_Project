@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block body %}
+
+<div class="px-4 py-5 my-5 text-center">
+  <img class="d-block mx-auto mb-4" src="{% static 'images/ice-cream-logo.png' %}" alt="logo" width="100">
+  <h1 class="display-5 fw-bold text-body-emphasis">Our Sweet Story</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Crafting moments of joy, one scoop at a time. We believe in the simple pleasure of a perfect ice cream, made with love, passion, and the finest ingredients.</p>
+  </div>
+</div>
+
+---
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="{% static 'images/shop-front.jpg' %}" class="d-block mx-lg-auto img-fluid rounded shadow-lg" alt="Our Ice Cream Shop" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h2 class="display-6 fw-bold lh-1 mb-3">From Our Family to Yours</h2>
+      <p class="lead">Our journey began in a small kitchen right here in Bokaro, with a family recipe passed down through generations. What started as a hobby—making delicious, creamy ice cream for friends and family—soon blossomed into a passion. We saw the smiles and happiness our ice cream brought and dreamt of sharing that joy with our entire community. Today, we're proud to serve our handcrafted creations, made in small batches with the same care and dedication as day one.</p>
+    </div>
+  </div>
+</div>
+
+---
+
+<div class="container px-4 py-5" id="featured-3">
+  <h2 class="pb-2 border-bottom text-center">What Makes Us Special</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded-circle" style="width: 3rem; height: 3rem;">
+        🍦
+      </div>
+      <h3 class="fs-2 text-body-emphasis">Local & Fresh</h3>
+      <p>We partner with local farms to source the freshest milk, cream, and seasonal fruits. Supporting our community tastes delicious!</p>
+    </div>
+    <div class="feature col text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded-circle" style="width: 3rem; height: 3rem;">
+        🌿
+      </div>
+      <h3 class="fs-2 text-body-emphasis">All-Natural</h3>
+      <p>You won't find any artificial preservatives or flavors here. We use real vanilla, pure chocolate, and fresh ingredients for a truly authentic taste.</p>
+    </div>
+    <div class="feature col text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 rounded-circle" style="width: 3rem; height: 3rem;">
+        ❤️
+      </div>
+      <h3 class="fs-2 text-body-emphasis">Made with Love</h3>
+      <p>Every single batch is handcrafted with passion and attention to detail. We believe this is the secret ingredient you can taste in every scoop.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}

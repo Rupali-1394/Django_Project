@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Our Services{% endblock title %}
+
+{% block body %}
+
+<div class="container px-4 py-5 text-center">
+  <h1 class="display-5 fw-bold text-body-emphasis">Our Sweet Services</h1>
+  <div class="col-lg-8 mx-auto">
+    <p class="lead mb-4">From a single perfect scoop to catering your biggest celebrations, we're here to make life a little sweeter. Discover all the ways you can enjoy our handcrafted ice cream, made with love right here in Bokaro.</p>
+  </div>
+</div>
+
+---
+
+<div class="container px-4 py-5" id="services">
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+    
+    <div class="col d-flex align-items-start">
+      <div class="text-bg-primary bg-gradient fs-4 rounded-3 me-3 p-2">🎉</div>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Party & Event Catering</h3>
+        <p>Make your next event unforgettable! We bring our delicious, handcrafted ice cream to your weddings, birthdays, and corporate events. Our team handles everything from setup to serving.</p>
+      </div>
+    </div>
+    
+    <div class="col d-flex align-items-start">
+      <div class="text-bg-primary bg-gradient fs-4 rounded-3 me-3 p-2">🛍️</div>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Take-Home Tubs</h3>
+        <p>Enjoy our signature flavors from the comfort of your home. We offer 500ml and 1-litre tubs, perfect for a cozy night in or sharing with family and friends.</p>
+      </div>
+    </div>
+
+    <div class="col d-flex align-items-start">
+      <div class="text-bg-primary bg-gradient fs-4 rounded-3 me-3 p-2">🎂</div>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Custom Ice Cream Cakes</h3>
+        <p>Celebrate with a one-of-a-kind ice cream cake. Choose your favorite ice cream flavors, layers, and toppings for a truly personal and delicious dessert masterpiece.</p>
+      </div>
+    </div>
+    
+    <div class="col d-flex align-items-start">
+      <div class="text-bg-primary bg-gradient fs-4 rounded-3 me-3 p-2">🍦</div>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">In-Store Delights</h3>
+        <p>Visit our shop for the freshest scoops in town! Choose from classic cones, decadent sundaes, thick milkshakes, and our daily special flavors. There's always something new to try.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container my-5">
+  <div class="p-5 text-center bg-body-tertiary rounded-3">
+    <h2 class="text-body-emphasis">Have a Question or an Event Idea?</h2>
+    <p class="col-lg-8 mx-auto fs-5 text-muted">
+      We'd love to help you plan the perfect sweet treat for any occasion.
+    </p>
+    <div class="d-inline-flex gap-2 mb-5">
+      <a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" href="/contacts">
+        Contact Us
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}
